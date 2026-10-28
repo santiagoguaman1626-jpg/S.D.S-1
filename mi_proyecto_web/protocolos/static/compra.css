@@ -1,0 +1,114 @@
+.compra {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.pasos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.paso {
+    text-align: center;
+    font-weight: bold;
+    color: #777;
+}
+
+.paso.activo {
+    color: red;
+}
+
+.paso small {
+    display: block;
+    margin-top: 8px;
+}
+
+.linea {
+    width: 120px;
+    height: 3px;
+    background: #ddd;
+    margin: 0 10px;
+}
+
+.formulario {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #0002;
+}
+
+.formulario h2 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.formulario label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 13px;
+    margin-top: 7px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.opciones {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.opciones button {
+    flex: 1;
+    padding: 20px;
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.opciones button:hover {
+    border-color: red;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 20px;
+    background: #f5f5f5;
+    font-size: 20px;
+}
+
+.total strong {
+    color: red;
+}
+
+.comprar {
+    width: 100%;
+    padding: 16px;
+    margin-top: 20px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.comprar:hover {
+    background: #b90000;
+}   
+li {
+    list-style: none;
+    text-align: center;
+}
+

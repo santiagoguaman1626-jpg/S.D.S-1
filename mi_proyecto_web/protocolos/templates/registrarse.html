@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro - S.D.S</title>
+
+    <link rel="stylesheet" href="registro.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="imagen-carro">
+            <img src="../img/img1/cla7.jpeg" alt="Carro amarillo">
+        </div>
+
+        <div class="formulario">
+
+            <div class="logo">
+                 <span>S.D.S </span>
+            </div>
+
+            <h1>Regístrate para comenzar</h1>
+
+            <p class="subtitulo">
+                Inserta detalles para seguir
+            </p>
+
+            <form id="registroForm">
+
+                <label for="nombre">Nombre completo</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Ingresa tu nombre"
+                    required
+                >
+
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="ejemplo@correo.com"
+                    required
+                >
+
+                <label for="password">Contraseña</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Ingresa tu contraseña"
+                    required
+                >
+
+                <label class="terminos">
+                    <input type="checkbox" id="terminos" required>
+                    Estoy de acuerdo con<span>Terminos y publicidad</span>
+                </label>
+
+                <button type="submit" class="btn-registro">
+                    Registrarse
+                </button>
+
+            </form>
+
+        
+            <p id="mensaje"></p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

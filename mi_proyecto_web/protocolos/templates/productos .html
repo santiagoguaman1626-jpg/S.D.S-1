@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+
+    <link rel="stylesheet" href="productos.css">
+</head>
+
+<body>
+
+    <section id="productos">
+
+        <h1>Nuestros Productos</h1>
+
+
+        <div class="categoria">
+            <h2>Componentes del Motor: Referencias y Costos</h2>
+            <div class="productos" id="cat-motor"></div>
+        </div>
+
+
+        <div class="categoria">
+            <h2>Herramientas de mano basicas</h2>
+            <div class="productos" id="cat-Herramientas"></div>
+        </div>
+
+
+        <div class="categoria">
+            <h2>Suspensión y Dirección</h2>
+            <div class="productos" id="cat-suspension"></div>
+        </div>
+
+
+        <div class="categoria">
+            <h2>Sistema Eléctrico</h2>
+            <div class="productos" id="cat-electrico"></div>
+        </div>
+
+
+        <div class="categoria">
+            <h2>Transmisión y Embrague</h2>
+            <div class="productos" id="cat-transmision"></div>
+        </div>
+
+
+    </section>
+
+
+    <script>
+
+        const categoriasData = {
+
+            "cat-motor": [
+
+                { nombre: "Aceite de motor: Mobil Super 1000 20W-50 (Galón)", precio: "$167.000", img: "../img/img1/Aceite de motor.jpg" },
+                { nombre: "Líquido refrigerante: Prestone Anticongelante / Refrigerante Verde (Galón)", precio: "$50.000", img: "../img/img1/Liquido refrigerante.webp" },
+                { nombre: "Filtro de aceite: ACDelco Filtro de Aceite GM Original (Unidad)", precio: "$30.000", img: "../img/img1/Filtro de aceite.jpg" },
+                { nombre: "Filtro de aire nissan Np300 frontier 2016,2024 Premium Filters Filtro", precio: "$35.000", img: "../img/img1/Filtro de aire nissan.webp" },
+                { nombre: "Bujía de encendido: NGK Bujía Iridium CR7HIX (Unidad)", precio: "$42.000", img: "../img/img1/Bujia de encendido.webp" },
+                { nombre: "Batería: MAC Silver 12V 48IST1000MC (Unidad)", precio: "$438.000", img: "../img/img1/Bateria MAC Silver.jpg" },
+                { nombre: "Correa de distribución: Gates Correa de Distribución / Repartición", precio: "$135.000", img: "../img/img1/Correa de distribucion.webp" },
+                { nombre: "Inyector de combustible: Bosch Inyector de Gasolina (Unidad)", precio: "$160.000", img: "../img/img1/Inyector de gasolina.avif" },
+                { nombre: "Bomba de agua: VDO Bomba de Agua de Motor", precio: "$120.000", img: "../img/img1/Bomba de agua VDO.jpg" },
+                { nombre: "Bomba de aceite: Fallone Bomba de Aceite de Motor", precio: "$185.000", img: "../img/img1/Bomba de aceite Fallone.jpg" },
+                { nombre: "Termostato: Tama Termostato de Refrigeración", precio: "$55.000", img: "../img/img1/Termostato Refrigeración.jpg" },
+                { nombre: "Junta De CulataEmpaque De Culata Nissan Mt3000 (bd30) / Junta De Culata", precio: "$220.000", img: "../img/img1/Empaque De Culata Nissan Mt3000.webp" },
+                { nombre: "Pistones Y Anillos ( X 4) Motor Renault Stepway Duster Mahle", precio: "1.250.000", img: "../img/img1/Pistones Y Anillos X 4 Motor Renault.webp" },
+                { nombre: "Biela GM 1.8L / F18 Optra 1800CC Monza 2.0L Nubira 1800CC Vivant Epica", precio: "$85.000", img: "../img/img1/Biela GM 1.8L.webp" },
+                { nombre: "Cigüeñal Completo Motor Diesel 1100f Rosca 47 Mm", precio: "$450.000", img: "../img/img1/Cigüeñal Completo Motor Diesel 1100f.webp" },
+                { nombre: "Motor y transmisión A-Premium 4x Soporte para Kia Sedona Hyundai Entourage Auto", precio: "$510.000", img: "../img/img1/Componentes del Motor 1.webp" },
+
+            ],
+
+
+            "cat-Herramientas": [
+
+                { nombre: "Juego de llaves mixtas 8–19 mm (12 pzas)", precio: "$165.000", img: "../img/img1/Herramientas de mano 1.jpg" },
+                { nombre: "Juego De 14 Llaves Mixtas Desde 6 Mm Hasta 24 M", precio: "$75.000", img: "../img/img1/Herramientas de mano 2.jpg" },
+                { nombre: "De colección J.H. Williams 8 Superjustable", precio: "$45.000", img: "../img/img1/Herramientas de mano 3.webp" },
+                { nombre: "Llave francesa ajustable Stanley 12 pulgadas (300)", precio: "$65.000", img: "../img/img1/Herramientas de mano 4.jpg" },
+                { nombre: "Boen Pro Juego de Dados de Impacto de 1/4 Pulgadas", precio: "$478.000", img: "../img/img1/Herramientas de mano 5.jpg" },
+                { nombre: "Juego de dados estandar Husky 24pz SAE/Métricas con Matraca de 3/8", precio: "$200.000", img: "../img/img1/Herramientas de mano 6.jpg" },
+                { nombre: "Juego de Dados Powerbuilt 69 Piezas SAE Métrico 1/2 Pulgada 6 y 12 Puntos", precio: "$1.840.000", img: "../img/img1/Herramientas de mano 7.jpg" },
+                { nombre: "Trinquete de liberación rápida Craftsman 3/8 Drive 72 dientes CMMT86722 nuevo", precio: "$35.000", img: "../img/img1/Herramientas de mano 8.jpg" },
+                { nombre: "Juego de 14 Llaves Combinadas Métricas Stanley", precio: "$480.000", img: "../img/img1/Herramientas de mano 9.jpg" },
+                { nombre: "Juego de Dados Métrico 12 Puntas Encastre 1/2 29 Pzs. Stanley 86-504", precio: "$570.000", img: "../img/img1/Herramientas de mano 10.jpg" },
+                { nombre: "Cilindro de rueda", precio: "$820.000", img: "../img/img1/Herramientas de mano 11.jpg" },
+                { nombre: "Alicate de Presión Hombre Solo Stanley 10", precio: "$50.000", img: "../img/img1/Herramientas de mano 12.jpg" },
+                { nombre: "Calibrador de galgas metrico 25 hojas Stanley 78-212", precio: "$40.000", img: "../img/img1/Herramientas de mano 13.jpg" },
+                { nombre: "Pinza Punta Mini Fina De 5'' Stanley 84-096", precio: "$30.000", img: "../img/img1/Herramientas de mano 14.jpg" },
+                { nombre: "Llave De Tubo 12 PuLG 304 Mm Stanley 87-623", precio: "$78.000", img: "../img/img1/Herramientas de mano 15.jpg" },
+                { nombre: "Cincel Plano 3/8 X 6 Stanley 16-286", precio: "$25.000", img: "../img/img1/Herramientas de mano 16.jpg" },
+               
+            ],
+
+
+            "cat-suspension": [
+
+                { nombre: "Amortiguadores delanteros", precio: "$150.000", img: "../img/img1/Suspensión y Dirección 1.jpg" },
+                { nombre: "2 Amortiguadores Traseros Para Chevrolet Optra A Gas", precio: "$370.000", img: "../img/img1/Suspensión y Dirección 2.jpg" },
+                { nombre: "Amortiguador Delantero Derecho Grand Vitara Sz 2.7", precio: "$230.000", img: "../img/img1/Suspensión y Dirección 3.jpg" },
+                { nombre: "Tijera Delantera Inferior Derecha Chevrolet Colorado (18/23)", precio: "$550.000", img: "../img/img1/Suspensión y Dirección 4.jpg" },
+                { nombre: "Junta de rótula superior delantera para Chevrolet C1500 1988 - 1999 TRW JBJ7041", precio: "$80.000", img: "../img/img1/Suspensión y Dirección 5.jpg" },
+                { nombre: "Terminal De Dirección Compatible Con John Deere 1020; 1520; 2030;", precio: "$145.000", img: "../img/img1/Suspensión y Dirección 6.jpg" },
+                { nombre: "Axial Direccion Jeep Grand Cherokee Modelo 2005 al 2010", precio: "$130.000", img: "../img/img1/Suspensión y Dirección 7.jpg" },
+                { nombre: "Muñeco Barra Estabilizadora Delantero Tucson New Sportage MUNECO NEW SPORTA-TUCS DEL D/I", precio: "$60.000", img: "../img/img1/Suspensión y Dirección 8.jpg" },
+                { nombre: "Buje Barra Estabilizadora Delantera BUJE BARRA EST VISION-CARE DEL", precio: "$10.000", img: "../img/img1/Suspensión y Dirección 9.jpg" },
+                { nombre: "Kit Guardapolvo Eje Lado Rueda Toyota Hilux Vigo 2.8 Gti", precio: "$50.000", img: "../img/img1/Suspensión y Dirección 10.jpg" },
+                { nombre: "Guardapolvo Caja Direccion Spark Gt Caucho Juego X 2 Und", precio: "$80.000", img: "../img/img1/Suspensión y Dirección 11.jpg" },
+                { nombre: "Rodamiento De Rueda Interior Delantero Fag 59zk36k Se Adapta Al", precio: "$120.000", img: "../img/img1/Suspensión y Dirección 12.jpg" },
+                { nombre: "Cojinete de rueda SKF BAH-0013 E", precio: "$120.000", img: "../img/img1/Suspensión y Dirección 13.jpg" },
+                { nombre: "Base Amortiguador Delantero Jeep Renagade 2015 al 2022", precio: "$140.000", img: "../img/img1/Suspensión y Dirección 14.jpg" },
+                { nombre: "Espirales Delanteros Chevrolet Sail", precio: "$320.000", img: "../img/img1/Suspensión y Dirección 15.jpg" },
+                { nombre: "Caja Direccion Renault Twingo (con Axial-terminal) Completa", precio: "$370.000", img: "../img/img1/Suspensión y Dirección 16.jpg" }
+
+            ],
+
+
+            "cat-electrico": [
+
+                { nombre: "Batería para carro Silver 48ST950MC 12V Mac", precio: "$450.000", img: "../img/img1/Sistema electrico 1.jpg" },
+                { nombre: "Bateria BOSCH S4 NS60-700", precio: "$590.000", img: "../img/img1/Sistema electrico 2.jpg" },
+                { nombre: "Alternador Original Mazda 6 Bosh 2.0- 2.3", precio: "$850.000", img: "../img/img1/Sistema electrico 3.jpg" },
+                { nombre: "Arrancador De Repuesto Para Bosch 0 001 107 107 Arranque Motor", precio: "$710.000", img: "../img/img1/Sistema electrico 4.jpg" },
+                { nombre: "Bobina de encendido Bosch 0221604115 Volkswagen Jetta", precio: "$210.000", img: "../img/img1/Sistema electrico 5.jpg" },
+                { nombre: "Bobina Ignición Para Chevrolet Sonic Y Tracker", precio: "$350.000", img: "../img/img1/Sistema electrico 6.jpg" },
+                { nombre: "Bosch Cable de Bujia Gol 1.6 Monopunto", precio: "$350.000", img: "../img/img1/Sistema electrico 7.jpg" },
+                { nombre: "Sensor Cigüeñal Std Jeep Grand Cherokee 1999 al 2009 Motor 4.7", precio: "$160.000", img: "../img/img1/Sistema electrico 8.jpg" },
+                { nombre: "Sensor posición arbol de levas Bosch 0 232 103 114", precio: "$180.000", img: "../img/img1/Sistema electrico 9.jpg" },
+                { nombre: "Sensor Map Para Dodge Journey 2009 al 2010 Motor 2.4", precio: "$240.000", img: "../img/img1/Sistema electrico 10.jpg" },
+                { nombre: "Bosch Mass Air Flow Sensor 0280218237", precio: "$450.000", img: "../img/img1/Sistema electrico 11.jpg" },
+                { nombre: "Sensor Oxigeno Jeep Compass 2007 al 2010 y/o Dodge Journey 2009 al 2010 Motor 2.4", precio: "$190.000", img: "../img/img1/Sistema electrico 12.jpg" },
+                { nombre: "Delphi TS10075 Coolant Temperature Sensor", precio: "$100.000", img: "../img/img1/Sistema electrico 13.jpg" },
+                { nombre: "REGULADOR UNIVERSAL 12V 2 SALIDAS", precio: "$22.000", img: "../img/img1/Sistema electrico 14.jpg" },
+                { nombre: "Automatico Arranque (selenoide) Zm-890 Mazda Turbo/ford Van", precio: "$100.000", img: "../img/img1/Sistema electrico 15.jpg" },
+                { nombre: "Sensor de temperatura", precio: "$45.000", img: "../img/img1/Sistema electrico 16.jpg" },
+                { nombre: "Relés Universales De 12 Voltios 30/40 Amp 5 Pines Spdt Estilo Bosch -", precio: "$140.000", img: "../img/img1/Sistema electrico 17.jpg" },
+                { nombre: "Fusible caja M Mini 10 Amp para carro x100 und", precio: "$20.000", img: "../img/img1/Sistema electrico 18.jpg" },
+                { nombre: "Bombillo H7 C.Blue Inten Osram +100% Luz 55w 12v 2p X1 - Osram", precio: "$140.000", img: "../img/img1/Sistema electrico 19.jpg" },
+                { nombre: "Pila De Gasolina Combustible Multipunto Bosch", precio: "$220.000", img: "../img/img1/Sistema electrico 20.jpg" }
+
+            ],
+
+
+            "cat-transmision": [
+
+                { nombre: "Kit Embrague Para Chevrolet Spark Cronos 7:24 Go Life", precio: "$340.000", img: "../img/img1/Transmision y embrague 1.jpg" },
+                { nombre: "Kit de Embrague LuK 600 0376 00", precio: "$1.800.000", img: "../img/img1/Transmision y embrague 2.jpg" },
+                { nombre: "Balinera Embrague (clutch) Nkr Nhr Con Turbo Original", precio: "$120.000", img: "../img/img1/Transmision y embrague 3.jpg" },
+                { nombre: "Semieje Skf Derecho Para Logan / Sandero / Symbol", precio: "$500.000", img: "../img/img1/Transmision y embrague 4.jpg" },
+                { nombre: "Ruleman Ina Delantero Ford Galaxi Orion Escort S/abs", precio: "$50.000", img: "../img/img1/Transmision y embrague 5.jpg" },
+                { nombre: "Solenoide Control Automático Caja Ford 2013 2017 Repuesto", precio: "$330.000", img: "../img/img1/Transmision y embrague 6.jpg" },
+                { nombre: "Buje Barra Estabilizador Del Bmw Serie 1 Y 3 04/12 (x2)", precio: "$65.000", img: "../img/img1/Transmision y embrague 7.jpg" },
+                { nombre: "Kit Embrague Sachs Ford Fiesta / Ka 1.0 1.3 Endura", precio: "$220.000", img: "../img/img1/Transmision y embrague 8.jpg" },
+                { nombre: "Enfriador De Aceite Maxion 2.5 Ford - Chevrolet - Mb-perkins", precio: "$150.000", img: "../img/img1/Transmision y embrague 9.jpg" },
+                { nombre: "Satelite Y Planetario Autoblocante Dana 44 44/3 S10 Ranger", precio: "$220.000", img: "../img/img1/Transmision y embrague 10.jpg" },
+                { nombre: "Enfriador Aceite Motor Para Chevrolet Captiva 2.2 Td", precio: "$100.000", img: "../img/img1/Transmision y embrague 11.jpg" },
+                { nombre: "Valvula Reguladora De Presion Bosch Para Vw Amarok 2.0 Tdi", precio: "$290.000", img: "../img/img1/Transmision y embrague 12.jpg" },
+                { nombre: "Convertidor Caja Automatica Ford Falcon 82/91 Original 0km", precio: "$1.000.000", img: "../img/img1/Transmision y embrague 13.jpg" },
+                { nombre: "Cruceta Universal Cardan Ford-chevrolet-dodge 27mm X 82mm", precio: "$30.000", img: "../img/img1/Transmision y embrague 14.jpg" },
+                { nombre: "Soporte Cardan 50mm Vw 17250 17300 17310 24220 24250 26.260", precio: "$150.000", img: "../img/img1/Transmision y embrague 15.jpg" },
+                { nombre: "Reten Caja Cambios Vw 09a409400 Dq200 Dq500", precio: "$60.000", img: "../img/img1/Transmision y embrague 16.jpg" },
+                { nombre: "Kit De Reparación Selectora Torino Falcon Caja Zf C/ Resorte", precio: "$40.000", img: "../img/img1/Transmision y embrague 17.jpg" },
+                { nombre: "Filtro Aceite Nissan Tiida March Versa Note Xtrail 2.5 Kicks", precio: "$30.000", img: "../img/img1/Transmision y embrague 18.jpg" },
+                { nombre: "Aceite Transmisión Sintético Mannol ATF JWS Multivehicle 4L Auto/Camioneta", precio: "$80.000", img: "../img/img1/Transmision y embrague 19.jpg" },
+                { nombre: "Valvoline Aceite De Transmision Maxlife Alto Rendimiento", precio: "$180.000", img: "../img/img1/Transmision y embrague 20.jpg" }
+
+            ]
+
+            };
+
+
+          
+
+
+        Object.keys(categoriasData).forEach(catId => {
+
+            const contenedor = document.getElementById(catId);
+
+            if (contenedor) {
+
+                categoriasData[catId].forEach(p => {
+
+                    contenedor.innerHTML += `
+
+                        <div class="producto">
+
+                            <img src="${p.img}" alt="${p.nombre}">
+
+                            <h3>${p.nombre}</h3>
+
+                            <p>${p.precio}</p>
+
+                            <button class="boton-comprar"
+                                onclick="comprarProducto('${p.nombre}', '${p.precio}')">
+                                Comprar
+                            </button>
+
+                        </div>
+
+                    `;
+
+                });
+
+            }
+
+        });
+
+
+        function comprarProducto(nombre, precio) {
+
+            alert(
+                "Producto seleccionado:\n\n" +
+                "Producto: " + nombre +
+                "\nPrecio: " + precio
+            );
+
+        }
+
+    </script>
+
+                <tr>
+                    <td colspan="2">
+
+                        <li><a href="web sena .html">VOLVER AL INICIO</a></li>
+
+                    </td>
+                </tr>
+
+</body>
+
+</html>
+
